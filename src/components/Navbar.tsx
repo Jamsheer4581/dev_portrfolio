@@ -1,8 +1,6 @@
 "use client";
-
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
@@ -12,14 +10,11 @@ const navItems = [
   { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
 ];
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
       <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-black/60 px-6 py-4 backdrop-blur-xl">
-        
         {/* Logo */}
         <a
           href="#home"
